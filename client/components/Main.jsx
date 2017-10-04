@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import App from './App.jsx';
+import Home from './Home.jsx';
 import Doctor from './Doctor.jsx';
 import Staff from './Staff.jsx';
 import Services from './Services.jsx';
@@ -13,7 +14,7 @@ import Contact from './Contact.jsx';
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={App}/>
+      <Route exact path='/' component={Home}/>
       <Route path='/doctor' component={Doctor}/>
       <Route path='/staff' component={Staff}/>
       <Route path='/services' component={Services}/>

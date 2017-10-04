@@ -2,10 +2,7 @@
   "name": "meyersdds-website",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
   "scripts": {
     "start": "npm run server",
     "server": "nodemon server/server.js",
