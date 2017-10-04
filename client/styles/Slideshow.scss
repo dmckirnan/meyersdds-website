@@ -1,0 +1,24 @@
+$slideshow-shadow: 10px 10px 5px #000000;
+
+img {
+  height: 400px;
+  width: 800px;
+
+  -webkit-box-shadow: $slideshow-shadow;
+  -moz-box-shadow: $slideshow-shadow;
+  -o-box-shadow: $slideshow-shadow;
+  -ms-box-shadow: $slideshow-shadow;
+  box-shadow: $slideshow-shadow;
+}
+
+#slide-container {
+  padding-top: 25px;
+  padding-bottom: 60px;
+
+  background: #fff;
+}
+
+div#slide-container img {
+  display: block;
+  margin: auto;
+}
