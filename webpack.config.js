@@ -31,6 +31,14 @@ const config = {
     },
     ],
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js',
+    historyApiFallback: true,
+    inline: true,
+    open: true,
+  },
+  devtool: 'eval-source-map',
 };
 
 module.exports = config;
