@@ -1,25 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Header from './Header.jsx';
-import Main from './Main.jsx';
+import Navbar from "./Navbar.jsx";
+import Header from "./Header.jsx";
+import Main from "./Main.jsx";
 
-import './../styles/Header.scss';
+import "./../styles/Navbar.scss";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      products: [],
-    }
+      products: []
+    };
   }
 
   render() {
     return (
       <div id="container">
-        <Header />
-        <div className="spacer">
-          &nbsp;
-        </div>
+        <Navbar />
+        <div className="spacer">&nbsp;</div>
         <Main />
       </div>
     );

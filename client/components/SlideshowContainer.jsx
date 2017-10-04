@@ -10,7 +10,7 @@ const SlideShowContainer = props =>
         transitionEnterTimeout={500}
         transitionLeaveTimeout={300}
       >
-        <img src={props.slide.url} alt="test" />
+        <img className="slideshow-image" src={props.slide.url} alt="test" />
       </ReactCSSTransitionGroup>
     </div>
   );
