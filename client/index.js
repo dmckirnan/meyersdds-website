@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './components/App.jsx';
 
+/* eslint-disable react/jsx-filename-extension */
 ReactDOM.render((
   <BrowserRouter>
     <div>
