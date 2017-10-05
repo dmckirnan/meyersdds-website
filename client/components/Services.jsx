@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './../styles/Services.scss';
 
 const Services = () => (
@@ -25,7 +26,10 @@ const Services = () => (
         </ul>
       </td>
       <td>
-        <img src="http://fullertonsmiles.net/images/services_21.jpg" />
+        <img
+          src="http://fullertonsmiles.net/images/services_21.jpg"
+          alt="Smiling"
+        />
       </td>
     </tr>
   </table>

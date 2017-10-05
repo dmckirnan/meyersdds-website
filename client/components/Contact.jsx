@@ -1,5 +1,6 @@
-import React from "react";
-import "./../styles/Contact.scss";
+import React from 'react';
+
+import './../styles/Contact.scss';
 
 const Contact = () => (
   <table className="contact-table">

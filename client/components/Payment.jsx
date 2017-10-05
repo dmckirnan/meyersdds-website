@@ -1,5 +1,6 @@
-import React from "react";
-import "./../styles/Payment.scss";
+import React from 'react';
+
+import './../styles/Payment.scss';
 
 const Payment = () => (
   <table className="payments-table">
@@ -26,7 +27,7 @@ const Payment = () => (
           </p>
           <p>
             Emergencies - First time patients will be seen on a cash basis,
-            unless insurance coverage can be verified.{" "}
+            unless insurance coverage can be verified.
           </p>
           <p>NSF Checks - There is a $45.00 fee for all returned checks.</p>
           <p>
