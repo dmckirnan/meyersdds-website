@@ -15,8 +15,8 @@ const SlideShowContainer = props =>
     </div>
   );
 
-// SlideShowContainer.propTypes = {
-//   slide: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-// };
+SlideShowContainer.propTypes = {
+  slide: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+};
 
 export default SlideShowContainer;

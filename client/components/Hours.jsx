@@ -1,5 +1,5 @@
-import React from "react";
-import "./../styles/Hours.scss";
+import React from 'react';
+import './../styles/Hours.scss';
 
 const Hours = () => (
   <table className="hours-table">

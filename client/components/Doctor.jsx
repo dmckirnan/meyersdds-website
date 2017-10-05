@@ -1,5 +1,5 @@
-import React from "react";
-import "./../styles/Doctor.scss";
+import React from 'react';
+import './../styles/Doctor.scss';
 
 const Doctor = () => (
   <div>
@@ -57,7 +57,7 @@ const Doctor = () => (
       <div className="doc-photo">
         <img
           src="http://fullertonsmiles.net/images/picDoc_21.jpg"
-          alt="Photo of Dr. Meyers"
+          alt="Dr. Meyers"
         />
       </div>
     </div>

@@ -1,16 +1,14 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Navbar from "./Navbar.jsx";
-import Header from "./Header.jsx";
-import Main from "./Main.jsx";
-
-import "./../styles/Navbar.scss";
+import Navbar from './Navbar.jsx';
+import Main from './Main.jsx';
+import './../styles/App.scss';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      products: []
+      content: '',
     };
   }
 
