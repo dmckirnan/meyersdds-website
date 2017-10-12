@@ -1,25 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import './../styles/Navbar.scss';
+import './../styles/Header.scss';
 
-const Navbar = () => (
-  <div className="nav">
-    <div className="nav-container">
-      <h1 id="logo">STEVEN A. MEYERS DDS, FAGD</h1>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/doctor">Meet the Doctor</Link>
-        <Link to="/staff">Meet the Staff</Link>
-        <Link to="/services">Our Services</Link>
-        <Link to="/smile">Smile Gallery</Link>
-        <Link to="/payment">Payment Options</Link>
-        <Link to="/hours">Hours & Location</Link>
-        <Link to="/contact">Contact</Link>
-        <a href="https://www.ident.ws/template_include/pi_login.jsp?site=3818">Patient Login</a>
-      </nav>
+const Navbar = props =>
+  (
+    <div className="nav">
+      <div className="nav-container">
+        <button className="menu-open" onClick={props.toggleSidebar} />
+        <h1 className="logo"><Link to="/">STEVEN A. MEYERS DDS, FAGD</Link></h1>
+      </div>
     </div>
-  </div>
-);
+  );
+
+Navbar.propTypes = {
+  toggleSidebar: PropTypes.func.isRequired,
+};
 
 export default Navbar;

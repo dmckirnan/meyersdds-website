@@ -22,7 +22,7 @@ const config = {
       exclude: /node_modules/,
     },
     {
-      test: /\.scss$/,
+      test: /\.(scss|css|)$/,
       loaders: ['style-loader', 'css-loader', 'sass-loader'],
     },
     {
@@ -38,7 +38,6 @@ const config = {
     inline: true,
     open: true,
   },
-  devtool: 'eval-source-map',
 };
 
 module.exports = config;

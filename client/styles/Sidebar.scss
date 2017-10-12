@@ -1,0 +1,38 @@
+.sidebar-container {
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  z-index: 2000;
+
+  background: #7F8080;
+  position: fixed;
+}
+
+.sidebar {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  text-align: left;
+}
+
+.router-link {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  outline: none;
+  white-space: normal;
+  float: none;
+  text-decoration: none;
+}
+
+.router-link:hover {
+  color: #000!important;
+  background-color: #fff!important;
+}
+
+.router-link a {
+  text-decoration: none;
+}
