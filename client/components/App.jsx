@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Navbar from './Navbar.jsx';
-import Sidebar from './Sidebar.jsx';
 import Main from './Main.jsx';
 import '../styles/App.scss';
 
@@ -9,24 +8,24 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      sidebarActive: false,
+      responsive: false,
       content: '',
     };
-    this.toggleSidebar = this.toggleSidebar.bind(this);
+    this.toggleResponsive = this.toggleResponsive.bind(this);
   }
 
-  toggleSidebar() {
+  toggleResponsive() {
     const obj = Object.assign({}, this.state);
-    let sidebarActive = obj.sidebarActive;
-    sidebarActive = !sidebarActive;
+    let responsive = obj.responsive;
+    responsive = !responsive;
 
-    this.setState({ sidebarActive });
+    this.setState({ responsive });
   }
 
   render() {
     return (
       <div id="container">
-        <Navbar toggleSidebar={this.toggleSidebar} active={this.state.sidebarActive} />
+        <Navbar toggleResponsive={this.toggleResponsive} responsive={this.state.responsive} />
         <Main />
       </div>
     );

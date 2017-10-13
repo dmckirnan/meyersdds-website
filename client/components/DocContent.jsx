@@ -13,7 +13,7 @@ const DocContent = () => (
         />
       </div>
       <div className="doc-description">
-        <h2>Steven A. Myers DDS</h2>
+        <h2>Steven A. Myers DDS, FAGD</h2>
         <p>
           Steven A. Myers DDS specializes in beautifying smiles and helping you
           improve your overall appearance. Our experienced and friendly staff
