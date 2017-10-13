@@ -7,18 +7,23 @@ import '../styles/Sidebar.scss';
 const Sidebar = (props) => {
   if (props.active) {
     return (
-      <div className="sidebar-container">
-        <aside className="sidebar">
-          <button className="menu-close" onClick={props.toggleSidebar} />
-          <section className="router-link"><Link to="/">Home</Link></section>
-          <section className="router-link"><Link to="/doctor">Meet the Doctor</Link></section>
-          <section className="router-link"><Link to="/staff">Meet the Staff</Link></section>
-          <section className="router-link"><Link to="/services">Our Services</Link></section>
-          <section className="router-link"><Link to="/smile">Smile Gallery</Link></section>
-          <section className="router-link"><Link to="/payment">Payment Options</Link></section>
-          <section className="router-link"><Link to="/hours">Hours & Location</Link></section>
-          <section className="router-link"><Link to="/contact">Contact</Link></section>
-        </aside>
+      <div className="sidebar-nav">
+        <h3>Menu</h3>
+        <button className="close-button" onClick={props.toggleSidebar}>X</button>
+        <div className="menu">
+          <div className="main-menu-container">
+            <ul className="main-menu">
+              <li><Link className="router-link" onClick={props.toggleSidebar} to="/">Home</Link></li>
+              <li><Link className="router-link" onClick={props.toggleSidebar} to="/doctor">Meet the Doctor</Link></li>
+              <li><Link className="router-link" to="/staff">Meet the Staff</Link></li>
+              <li><Link className="router-link" to="/services">Our Services</Link></li>
+              <li><Link className="router-link" to="/smile">Smile Gallery</Link></li>
+              <li><Link className="router-link" to="/payment">Payment Options</Link></li>
+              <li><Link className="router-link" to="/hours">Hours & Location</Link></li>
+              <li><Link className="router-link" to="/contact">Contact</Link></li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }

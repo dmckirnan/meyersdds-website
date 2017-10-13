@@ -26,9 +26,7 @@ class App extends Component {
   render() {
     return (
       <div id="container">
-        <Navbar toggleSidebar={this.toggleSidebar} />
-        <Sidebar active={this.state.sidebarActive} toggleSidebar={this.toggleSidebar} />
-        <div className="spacer">&nbsp;</div>
+        <Navbar toggleSidebar={this.toggleSidebar} active={this.state.sidebarActive} />
         <Main />
       </div>
     );
