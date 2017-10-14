@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 body, html {
   margin: 0;
   padding: 0;
   position: relative;
   transition: opacity 150ms 0s ease-in;
   background: #fff;
+
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .spacer {
