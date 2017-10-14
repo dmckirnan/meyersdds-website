@@ -8,6 +8,8 @@ const Navbar = props =>
     <nav id="navbar" className={props.responsive ? 'navbar responsive' : 'navbar'}>
       <Link to="/">Home</Link>
       <Link to="/staff">Staff</Link>
+      <Link to="/doctor">Doctor</Link>
+      <Link to="/services">Services</Link>
       <Link to="/contact">Contact</Link>
       <a href="#" className="icon" onClick={props.toggleResponsive}>&#9776;</a>
     </nav>
